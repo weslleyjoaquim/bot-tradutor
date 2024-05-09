@@ -28,9 +28,6 @@ def translation_response(text):
 
     return response.text
 
-@bot.message_handler(commands=['tradutor'])
-def comando_tradutor(message):
-    bot.reply_to(message, "Digite o que vc quer traduzir")
 
 @bot.message_handler(func=lambda message:True)
 def handle_text(message):
